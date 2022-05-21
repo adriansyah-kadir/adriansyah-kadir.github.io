@@ -13,7 +13,6 @@ html {
 }
 
 body {
-	height: 500vh;
 	opacity: 0;
 	transition: opacity 1s;
 }
@@ -390,6 +389,7 @@ section.section {
 .education-history li {
 	height: 100%;
 	display: flex;
+	max-height: 100%;
 }
 
 .education-history li .line-history {
@@ -450,6 +450,39 @@ section.section {
 	left: 0;
 }
 
+/* work section */
+.work {
+	background-color: lightblue;
+}
+
+.work .attention {
+	width: 100%;
+	height: 80%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+
+.attention p {
+	margin: 10px;
+	padding: 10px;
+	background-color: rgb(255 255 255 / 0.4);
+	color: rgb(0 0 0/0.6);
+	font-family: "Poppins", sans-serif;
+	border-radius: 5px;
+	font-weight: bold;
+}
+
+.attention button {
+	padding: 10px 20px;
+	border-radius: 5px;
+}
+
+.attention button:hover {
+	animation: clicked 0.5s forwards;
+}
+
 /* media screen */
 @media (min-width: 768px) {
 	.navbar {
@@ -508,5 +541,20 @@ section.section {
 	}
 	100% {
 		transform: rotate(0);
+	}
+}
+
+@keyframes clicked {
+	0% {
+		transform: scaleX(1);
+	}
+	25% {
+		transform: scaleX(1.3) scaleY(0.7);
+	}
+	50% {
+		transform: scaleX(0.7) scaleY(1.3);
+	}
+	100% {
+		transform: scale(1);
 	}
 }
