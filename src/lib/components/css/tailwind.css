@@ -1,0 +1,38 @@
+@import "tailwindcss";
+@plugin "daisyui";
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+}
+
+@keyframes fade-out {
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes from-bottom {
+  from {
+    transform: translateY(20px);
+  }
+}
+
+@keyframes to-bottom {
+  to {
+    transform: translateY(20px);
+  }
+}
+
+@keyframes zoom-in {
+  from {
+    transform: scale(.9);
+  }
+}
+
+@keyframes zoom-out {
+  to {
+    transform: scale(.9);
+  }
+}
