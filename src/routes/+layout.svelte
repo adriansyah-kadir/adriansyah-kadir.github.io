@@ -1,35 +1,24 @@
 <script lang="ts">
 	import { page } from "$app/state";
-	import "$lib/assets/css/tailwind.css";
 	import IconGithub from "$lib/components/ui/icons/icon-github.svelte";
-	import IconMail from "$lib/components/ui/icons/icon-mail.svelte";
+	import "$lib/assets/css/all.css";
+	import IconSvelte from "$lib/components/ui/icons/icon-svelte.svelte";
 
 	let { children } = $props();
 </script>
 
-<header
-	class="h-14 glass backdrop-blur-xs shadow-none border-b border-base-300 sticky top-0"
->
+<header class="h-14 backdrop-blur-xs shadow-none fixed w-screen top-0 z-1">
 	<div class="max-w-5xl m-auto flex items-center h-full px-4 justify-between">
-		<a href={page.url.origin}>Adriansyah</a>
-		<div class="sm:flex gap-4 hidden">
-			<a href="/blogs">Blogs</a>
-			<a href="/projects">Projects</a>
-		</div>
-		<div class="flex">
-			<a
-				href="mailto:adriansyahkadir.work@gmail.com"
-				class="btn btn-square btn-link"
-			>
-				<IconMail />
-			</a>
-			<a
-				href="https://github.com/adriansyah-kadir"
-				class="btn btn-square btn-link"
-			>
-				<IconGithub />
-			</a>
-		</div>
+		<a href={page.url.origin} class="flex leading-0 items-center gap-2">
+			<IconSvelte />
+			Svelte
+		</a>
+		<a
+			href="https://github.com/adriansyah-kadir"
+			class="btn btn-square btn-ghost"
+		>
+			<IconGithub />
+		</a>
 	</div>
 </header>
 {@render children()}

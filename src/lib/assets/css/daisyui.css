@@ -1,0 +1,55 @@
+@plugin "daisyui/theme" {
+  name: "dark";
+  default: false;
+  prefersdark: true;
+  color-scheme: "dark";
+
+  /* Base surfaces (brighter, better contrast) */
+  --color-base-100: oklch(20% 0.003 255);
+  --color-base-200: oklch(24% 0.004 255);
+  --color-base-300: oklch(26% 0.005 255);
+  --color-base-content: oklch(94% 0.003 255);
+
+  /* Primary (shadcn blue) */
+  --color-primary: oklch(70% 0.14 255);
+  --color-primary-content: oklch(98% 0.01 255);
+
+  /* Secondary (muted gray-blue) */
+  --color-secondary: oklch(64% 0.04 255);
+  --color-secondary-content: oklch(95% 0.01 255);
+
+  /* Accent (soft violet) */
+  --color-accent: oklch(70% 0.07 280);
+  --color-accent-content: oklch(97% 0.01 280);
+
+  /* Neutral UI */
+  --color-neutral: oklch(24% 0.004 255);
+  --color-neutral-content: oklch(93% 0.003 255);
+
+  /* Status colors (balanced) */
+  --color-info: oklch(72% 0.12 240);
+  --color-info-content: oklch(97% 0.01 240);
+
+  --color-success: oklch(74% 0.14 145);
+  --color-success-content: oklch(97% 0.01 145);
+
+  --color-warning: oklch(80% 0.13 85);
+  --color-warning-content: oklch(98% 0.01 85);
+
+  --color-error: oklch(67% 0.18 25);
+  --color-error-content: oklch(97% 0.01 25);
+
+  /* Shape */
+  --radius-selector: 0.5rem;
+  --radius-field: 1rem;
+  --radius-box: 2rem;
+
+  --size-selector: 0.25rem;
+  --size-field: 0.25rem;
+  --border: 1px;
+
+  /* Flat like shadcn */
+  --depth: 1;
+  --noise: 0;
+}
+
