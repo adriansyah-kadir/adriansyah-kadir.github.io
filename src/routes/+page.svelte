@@ -8,7 +8,7 @@
   <div
     class="px-5 grid sm:grid-cols-[auto_1fr] grid-cols-1 gap-x-10 gap-y-5 items-center"
   >
-    <ProfilePicture class="row-span-2 avatar" />
+    <ProfilePicture class="row-span-2" />
     <div></div>
     <div>
       <h2 class="text-3xl">Adriansyah Kadir, S.Kom</h2>
