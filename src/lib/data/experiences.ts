@@ -1,5 +1,5 @@
 export default [{
-  name: "Lead Developer Intern",
+  name: "Flutter Developer Intern",
   desc: "Kejaksaan Negeri Kota Gorontalo (Kejari Kota Gorontalo)",
   date: "Internship 2024 ~ 2025",
   does: [
