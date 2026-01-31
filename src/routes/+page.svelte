@@ -26,7 +26,7 @@
         <h2 class="text-3xl">Adriansyah Kadir, S.Kom</h2>
         <small>Fullstack, Data Science</small>
         <div class="mt-2 space-x-2">
-          <a href="/projects" class="btn btn-primary">Projects</a>
+          <a href="https://github.com/adriansyah-kadir?tab=repositories" class="btn btn-primary">Projects</a>
           <a href="/blogs" class="btn">Blogs</a>
         </div>
       </div>
