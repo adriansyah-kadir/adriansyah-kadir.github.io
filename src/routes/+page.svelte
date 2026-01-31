@@ -1,18 +1,21 @@
 <script>
   import ProfilePicture from "$lib/components/profile-picture.svelte";
+  import Transition from "$lib/components/transition.svelte";
   import experiences from "$lib/data/experiences";
 </script>
 
-{@render Hero()}
-<div class="bg-base-200 prose-sm sm:prose max-w-none!">
-  {@render AboutMe()}
-  {@render XPerience()}
-  {@render Education()}
-</div>
+<Transition>
+  {@render Hero()}
+  <div class="bg-base-200 prose-sm sm:prose max-w-none!">
+    {@render AboutMe()}
+    {@render XPerience()}
+    {@render Education()}
+  </div>
+</Transition>
 
 {#snippet Hero()}
   <section
-    class="max-w-5xl h-screen m-auto px-4 py-10 flex items-center justify-center"
+    class="max-w-page h-screen m-auto px-4 py-10 flex items-center justify-center"
   >
     <div
       class="px-5 grid sm:grid-cols-[auto_1fr] grid-cols-1 gap-x-10 gap-y-5 items-center"
@@ -32,7 +35,7 @@
 {/snippet}
 
 {#snippet AboutMe()}
-  <section class="max-w-5xl m-auto px-4 py-10">
+  <section class="max-w-page m-auto px-4 py-10">
     <h2>Profile</h2>
     <p>
       I am a software developer with a strong interest in system-level
@@ -52,7 +55,7 @@
 {/snippet}
 
 {#snippet XPerience()}
-  <section id="experience" class="max-w-5xl m-auto px-4 py-10">
+  <section id="experience" class="max-w-page m-auto px-4 py-10">
     <h2>Experience</h2>
     {#each experiences as x}
       <h3 class="mt-0">{x.name}</h3>
@@ -70,7 +73,7 @@
 {/snippet}
 
 {#snippet Education()}
-  <section id="education" class="max-w-5xl m-auto px-4 py-10">
+  <section id="education" class="max-w-page m-auto px-4 py-10">
     <h2>Education</h2>
 
     <article>

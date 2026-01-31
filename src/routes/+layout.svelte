@@ -8,7 +8,7 @@
 </script>
 
 <header class="h-14 backdrop-blur-xs shadow-none fixed w-screen top-0 z-1">
-	<div class="max-w-5xl m-auto flex items-center h-full px-4 justify-between">
+	<div class="max-w-page m-auto flex items-center h-full px-4 justify-between">
 		<a href={page.url.origin} class="flex leading-0 items-center gap-2">
 			<IconSvelte />
 			Svelte

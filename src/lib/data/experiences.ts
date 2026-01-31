@@ -5,7 +5,7 @@ export default [{
   does: [
     "Developed <strong>three production-ready applications</strong> used in an institutional environment.",
     "Built a <strong>Face Attendance System</strong> using Flutter, implementing facial verification for attendance tracking.",
-    "Developed a <strong>Barang Bukti Management Application</strong> using Flutter to manage and organize evidence data efficiently.",
+    "Developed a <strong>Evidence Management Application</strong> using Flutter to manage and organize evidence data efficiently.",
     "Created a <strong>Satisfaction Survey Application</strong> using Flutter, integrated with <strong>Google Sheets</strong> for real-time data collection and reporting.",
     "Led the application development process from planning, implementation, to deployment.",
     "Translated operational requirements into functional and maintainable applications.",

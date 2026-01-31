@@ -2,6 +2,10 @@
 @plugin "@tailwindcss/typography";
 @plugin "daisyui";
 
+@theme inline {
+  --container-page: var(--container-3xl);
+}
+
 @layer base {
   * {
     font-family: "Poppins", sans-serif;
