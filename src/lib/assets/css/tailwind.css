@@ -4,6 +4,7 @@
 
 @theme inline {
   --container-page: var(--container-3xl);
+  --spacing-topbar: calc(var(--spacing) * 14);
 }
 
 @layer base {
