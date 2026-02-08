@@ -22,7 +22,7 @@
     {...img}
     bind:this={imgEl}
     class={[
-      "transition-all opacity-0 relative scale-90",
+      "transition-all opacity-0 relative scale-90 duration-300",
       { "opacity-100 scale-100": loaded },
     ]}
   />
